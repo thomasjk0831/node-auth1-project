@@ -4,7 +4,8 @@
   "description": "Use `Node.js`, `Express` and `Knex` to build an API that provides **Register** and **Login** functionality using `SQLite` to store _User_ information. Make sure the password is not stored as plain text.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start" : "node index.js",
+    "server" : "nodemon"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/thomasjk0831/node-auth1-project/issues"
   },
-  "homepage": "https://github.com/thomasjk0831/node-auth1-project#readme"
+  "homepage": "https://github.com/thomasjk0831/node-auth1-project#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-session-knex": "^2.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "knex": "^0.21.6",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
